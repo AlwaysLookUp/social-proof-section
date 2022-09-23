@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'League Spartan', sans-serif;
+}
+
+.grid {
+    padding: 5em 8em 5em 8em;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+/* Section One */
+
+.section-one {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Text Side */
+
+.hero-heading {
+    color: hsl(300, 43%, 22%);
+    font-size: 55px;
+    padding-right: 2em;
+}
+
+.hero-paragraph {
+    color: hsl(300, 43%, 22%);
+    font-size: 18px;
+    line-height: 1.3em;
+    padding-right: 8em;
+}
+
+/* Review Side */
+
+.review-side {
+    padding: 3em 0em;
+}
+
+.fa-star {
+    color: rgb(255, 153, 0);
+    margin: 0 0.3em;
+    font-size: 15px;
+}
+
+.star-box {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    padding-left: 1.5em;
+    height: 3em;
+    width: 24em;
+    border-radius: 0.5em;
+    align-items: center;
+    color: hsl(300, 43%, 22%);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.star-box-1 {
+    margin-left: 0em;
+}
+
+.star-box-2 {
+    margin-left: 3em;
+}
+
+.star-box-3 {
+    margin-left: 6em;
+}
+
+.star-class {
+    margin-right: 1.5em;
+}
+
+/* Section Two */
+
+.section-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0.5em;
+    margin-left: 0em;
+    margin-right: 0em;
+}
+
+/* Review Box */
+
+.review-box {
+    background-color: hsl(300, 43%, 22%);
+    color: white;
+    padding: 2em;
+    width: 275px;
+    border-radius: 0.5em;
+}
+
+.top-part {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: auto;
+    height: 40px;
+}
+
+.profile-text {
+    margin-left: 2em;
+}
+
+.profile-name {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: -0.5em;
+}
+
+.verified-text {
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    color: hsl(333, 80%, 67%);
+}
+
+.quote {
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+/* Boxes */
+
+.box-1 {
+    margin-top: 0;
+}
+
+.box-2 {
+    margin-top: 2em;
+}
+
+.box-3 {
+    margin-top: 4em;
+}
+
+@media screen and (max-width: 500px) {
+    .grid {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 100%;
+        padding: 1em;
+    }
+
+    .section-one {
+        grid-template-rows: 50% 50%;
+        grid-template-columns: auto;
+    }
+
+    .hero-heading {
+        padding: 0;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .hero-paragraph {
+        text-align: center;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .text-side {
+        padding-bottom: 0em;
+        height: 5em;
+    }
+
+    .review-side {
+        margin: 0;
+        padding: 0;
+    }
+
+    .star-box {
+        padding: 0;
+        display: grid;
+        text-align: center;
+        width: auto;
+        font-size: 20px;
+        height: 4.5em;
+    }
+
+    .fa-star {
+        font-size: 18px;
+    }
+
+    .star-box-1 {
+        margin-left: 0em;
+    }
+    
+    .star-box-2 {
+        margin-left: 0em;
+    }
+    
+    .star-box-3 {
+        margin-left: 0em;
+    }
+    
+    .star-class {
+        margin-right: 0em;
+    }
+
+    .section-two {
+        margin-top: 2em;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .review-box {
+        margin: 1em;
+        width: auto;
+        height: auto;
+        padding: 2em;
+        font-size: 18px;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
